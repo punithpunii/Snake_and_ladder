@@ -1,4 +1,4 @@
-#use case 1: The Player rolls the die to get a number between 1 to 6 
+#use case 2: The Player rolls the die to get a number between 1 to 6 
 
 def snakeladder(pos):
 
