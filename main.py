@@ -1,6 +1,26 @@
-#use case 3:  Player then checks for No Play, Ladder or Snake
+#use case 4:  Repeat till the Player reaches the winning position 100
 
 import random
+
+def play_game():
+    player1_pos=0
+    p2_dice_rolled_count=0
+play_game()
+
+def snakeladder(pos):
+
+    dice=random.randint(1,6)
+    print("Rolled:",dice)
+    pos+=dice
+    if pos<100:
+        print("Current position :",pos)
+        pos=snakeorladder_check(pos)
+    if pos>100:
+        pos-=dice
+        print("Current position :",pos)
+        pos=snakeorladder_check(pos)
+        
+    return pos
 
 def snakeorladder_check(pos):
  
